@@ -1,123 +1,165 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
 <head>
 	<title>Trivia</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 </head>
 <body>
-	<h1>Trivia de Matemática:</h1>
-	<h3 id="sub1">Averigua si eres un genio</h3>
-	<br />
-	<hr />
+	<div class="container">
 
-	<h2 class="preguntas">1. ¿A quién se le atribuye la función zeta?</h2>
-	<input id="pr1r1" type="radio" name="preg1">a) Leonhard Euler<br />
-	<input id="pr1r2" type="radio" name="preg1">b) Bernhard Riemann<br />
-	<input id="pr1r3" type="radio" name="preg1">c) Évariste Galois<br />
-	<input id="pr1r4" type="radio" name="preg1">d) Srinivasa Ramanujan<br />
-	<input id="pr1r5" type="radio" name="preg1">e) Carl Gauss<br />
+		<div class="title">
+			<h1>Trivia de Matemática:</h1>
+			<h3 id="sub1">Averigua si eres un genio</h3>
+		</div>
 
-	<hr />
+		<br />
 
-	<h2 class="preguntas">2. La función π(x) cuenta la cantidad de:</h2>
-	<input id="pr2r1" type="radio" name="preg2">a) Números primos menores o iguales a x<br />
-	<input id="pr2r2" type="radio" name="preg2">b) Números primos menores a x<br />
-	<input id="pr2r3" type="radio" name="preg2">c) Números primos iguales a x<br />
-	<input id="pr2r4" type="radio" name="preg2">d) Números primos mayores o iguales a x<br />
-	<input id="pr2r5" type="radio" name="preg2">e) Números primos mayores a x<br />
+		<hr />
 
-	<hr />
+		<div class="cont-p1">
+			<h2 class="preguntas">1. ¿A quién se le atribuye la función zeta \( \zeta(s) \) ?</h2>
+			<input id="pr1r1" type="radio" name="preg1"> Leonhard \( \mathbb{E} \)uler<br />
+			<input id="pr1r2" type="radio" name="preg1"> Bernhard \( \mathbb{R} \)iemann<br />
+			<input id="pr1r3" type="radio" name="preg1"> Évariste \( \mathbb{G} \)alois<br />
+			<input id="pr1r4" type="radio" name="preg1"> Srinivasa \( \mathbb{R} \)amanujan<br />
+			<input id="pr1r5" type="radio" name="preg1"> Carl \( \mathbb{G} \)auss<br />
+		</div>
 
-	<h2 class="preguntas">3. ¿Cuál de las siguientes sucesiones es la "Sucesión De Fibonacci"?</h2>
-	<input id="pr3r1" type="radio" name="preg3">a) 1,2,5,3,1,8,13...<br />
-	<input id="pr3r2" type="radio" name="preg3">b) 1,1,2,8,3,13,55...<br />
-	<input id="pr3r3" type="radio" name="preg3">c) 1,1,2,3,5,8,21...<br />
-	<input id="pr3r4" type="radio" name="preg3">d) 1,1,8,3,1,5,13...<br />
-	<input id="pr3r5" type="radio" name="preg3">e) 1,1,2,3,5,8,13...<br />
+		<hr />
 
-	<hr />
+		<div class="cont-p2">
+			<h2 class="preguntas">2. La función \( \pi(x) \) cuenta la cantidad de números primos:</h2>
+			<input id="pr2r1" type="radio" name="preg2"> Menores o iguales a \( x \) <br />
+			<input id="pr2r2" type="radio" name="preg2"> Menores a \( x \) <br />
+			<input id="pr2r3" type="radio" name="preg2"> Iguales a \( x \) <br />
+			<input id="pr2r4" type="radio" name="preg2"> Mayores o iguales a \( x \) <br />
+			<input id="pr2r5" type="radio" name="preg2"> Mayores a \( x \) <br />
+		</div>
 
-	<h2 class="preguntas">4. ¿Cuál es el problema del milenio considerado como el más importante?</h2>
-	<input id="pr4r1" type="radio" name="preg4">a) P versus NP<br />
-	<input id="pr4r2" type="radio" name="preg4">b) Conjetura de Poincaré<br />
-	<input id="pr4r3" type="radio" name="preg4">c) Hipótesis de Riemann<br />
-	<input id="pr4r4" type="radio" name="preg4">d) Conjetura de Hodge<br />
-	<input id="pr4r5" type="radio" name="preg4">e) Ecuaciones de Navier-Stokes<br />
+		<hr />
 
-	<hr />
+		<div class="cont-p3">
+			<h2 class="preguntas">3. ¿Cuál de las siguientes sucesiones es la "Sucesión De Fibonacci"?</h2>
+			<input id="pr3r1" type="radio" name="preg3"> \( 1,2,5,3,1,8,13... \) <br />
+			<input id="pr3r2" type="radio" name="preg3"> \( 1,1,2,8,3,13,55... \) <br />
+			<input id="pr3r3" type="radio" name="preg3"> \( 1,1,2,3,5,8,21... \) <br />
+			<input id="pr3r4" type="radio" name="preg3"> \( 1,1,8,3,1,5,13... \) <br />
+			<input id="pr3r5" type="radio" name="preg3"> \( 1,1,2,3,5,8,13... \) <br />
+		</div>
 
-	<h2 class="preguntas">5. El número π es:</h2>
-	<input id="pr5r1" type="radio" name="preg5">a) La multiplicación entre el perímetro de una circunferencia y la longitud de su diámetro<br />
-	<input id="pr5r2" type="radio" name="preg5">b) La relación entre el perímetro de una circunferencia y la longitud de su radio<br />
-	<input id="pr5r3" type="radio" name="preg5">c) La relación entre el radio de una circunferencia y la longitud de su diámetro<br />
-	<input id="pr5r4" type="radio" name="preg5">d) La relación entre el perímetro de una circunferencia y la longitud de su diámetro<br />
-	<input id="pr5r5" type="radio" name="preg5">e) La relación entre el perímetro de una circunferencia y la relación de su diámetro<br />
+		<hr />
 
-	<hr />
+		<div class="cont-p4">
+			<h2 class="preguntas">4. ¿Cuál es el problema del milenio considerado como el más importante?</h2>
+			<input id="pr4r1" type="radio" name="preg4"> \( \mathbb{P} \) versus \( \mathbb{N}\mathbb{P} \)<br />
+			<input id="pr4r2" type="radio" name="preg4"> \( \mathbb{C} \)onjetura de \( \mathbb{P} \)oincaré<br />
+			<input id="pr4r3" type="radio" name="preg4"> \( \mathbb{H} \)ipótesis de \( \mathbb{R} \)iemann<br />
+			<input id="pr4r4" type="radio" name="preg4"> \( \mathbb{C} \)onjetura de \( \mathbb{H} \)odge<br />
+			<input id="pr4r5" type="radio" name="preg4"> \( \mathbb{E} \)cuaciones de \( \mathbb{N} \)avier-\( \mathbb{S} \)tokes<br />
+		</div>
 
-	<h2 class="preguntas">6. El límite del cual se obtiene el número e es:</h2>
-	<input id="pr6r1" type="radio" name="preg6">a) Lim<sub>n->∞</sub>(1+1/n)<sup>n</sup><br />
-	<input id="pr6r2" type="radio" name="preg6">b) Lim<sub>n->0</sub>(1+1/n)<sup>n</sup><br />
-	<input id="pr6r3" type="radio" name="preg6">c) Lim<sub>n->∞</sub>(1+1/n)<br />
-	<input id="pr6r4" type="radio" name="preg6">d) Lim<sub>n->1</sub>(1+1/n)<sup>n</sup><br />
-	<input id="pr6r5" type="radio" name="preg6">e) No existe<br />
+		<hr />
 
-	<hr />
+		<div class="cont-p5">
+			<h2 class="preguntas">5. El número \( \pi \) es:</h2>
+			<input id="pr5r1" type="radio" name="preg5"> La multiplicación entre el perímetro de una circunferencia y la longitud de su diámetro<br />
+			<input id="pr5r2" type="radio" name="preg5"> La relación entre el perímetro de una circunferencia y la longitud de su radio<br />
+			<input id="pr5r3" type="radio" name="preg5"> La relación entre el radio de una circunferencia y la longitud de su diámetro<br />
+			<input id="pr5r4" type="radio" name="preg5"> La relación entre el perímetro de una circunferencia y la longitud de su diámetro<br />
+			<input id="pr5r5" type="radio" name="preg5"> La relación entre el perímetro de una circunferencia y la relación de su diámetro<br />
+		</div>
 
-	<h2 class="preguntas">7. La famosa identidad: e<sup>πi</sup>+1=0 ¿Qué famoso matemático lleva su nombre?</h2>
-	<input id="pr7r1" type="radio" name="preg7">a) Carl Gauss<br />
-	<input id="pr7r2" type="radio" name="preg7">b) Gottfried Leibniz<br />
-	<input id="pr7r3" type="radio" name="preg7">c) Leonhard Euler<br />
-	<input id="pr7r4" type="radio" name="preg7">d) Andrew Wiles<br />
-	<input id="pr7r5" type="radio" name="preg7">e) Kurt Gödel<br />
+		<hr />
 
-	<hr /> 
+		<div class="cont-p6">
+			<h2 class="preguntas">6. El límite del cual se obtiene el número \( e \) es:</h2>
+			<input id="pr6r1" type="radio" name="preg6"> \( \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \) <br />
+			<input id="pr6r2" type="radio" name="preg6"> \( \lim\limits_{n \to 0} (1 + \frac{1}{n})^n \) <br />
+			<input id="pr6r3" type="radio" name="preg6"> \( \lim\limits_{n \to \infty} (1 + \frac{1}{n}) \) <br />
+			<input id="pr6r4" type="radio" name="preg6"> \( \lim\limits_{n \to 1} (1 + \frac{1}{n})^n \) <br />
+			<input id="pr6r5" type="radio" name="preg6"> No existe<br />
+		</div>
 
-	<h2 class="preguntas">8. El resultado del Problema de Basilea resuelto por Euler en 1735 es:</h2>
-	<input id="pr8r1" type="radio" name="preg8">a) π<sup>4</sup>/6<br />
-	<input id="pr8r2" type="radio" name="preg8">b) π<sup>3</sup>/6<br />
-	<input id="pr8r3" type="radio" name="preg8">c) π/6<br />
-	<input id="pr8r4" type="radio" name="preg8">d) π<br />
-	<input id="pr8r5" type="radio" name="preg8">e) π<sup>2</sup>/6<br />
+		<hr />
 
-	<hr /> 
+		<div class="cont-p7">
+			<h2 class="preguntas">7. La famosa identidad: \( e^{\pi i} + 1 = 0 \) ¿Qué famoso matemático lleva su nombre?</h2>
+			<input id="pr7r1" type="radio" name="preg7"> Carl \( \mathbb{G} \)auss<br />
+			<input id="pr7r2" type="radio" name="preg7"> Gottfried \( \mathbb{L} \)eibniz<br />
+			<input id="pr7r3" type="radio" name="preg7"> Leonhard \( \mathbb{E} \)uler<br />
+			<input id="pr7r4" type="radio" name="preg7"> Andrew \( \mathbb{W} \)iles<br />
+			<input id="pr7r5" type="radio" name="preg7"> Kurt \( \mathbb{G} \)ödel<br />
+		</div>
 
-	<h2 class="preguntas">9. ¿Cuál de estos valores se aproxima más a la constante de Euler-Mascheroni?</h2>
-	<input id="pr9r1" type="radio" name="preg9">a) 1,577215664901532860<br />
-	<input id="pr9r2" type="radio" name="preg9">b) 2,577215664901532860<br />
-	<input id="pr9r3" type="radio" name="preg9">c) 10,577215664901532860<br />
-	<input id="pr9r4" type="radio" name="preg9">d) 0,577215664901532860<br />
-	<input id="pr9r5" type="radio" name="preg9">e) -1,577215664901532860<br />
+		<hr /> 
 
-	<hr /> 
+		<div class="cont-p8">
+			<h2 class="preguntas">8. El resultado del Problema de Basilea resuelto por Euler en 1735 es:</h2>
+			<input id="pr8r1" type="radio" name="preg8"> \( \frac{\pi^4}{6} \) <br />
+			<input id="pr8r2" type="radio" name="preg8"> \( \frac{\pi^3}{6} \)<br />
+			<input id="pr8r3" type="radio" name="preg8"> \( \frac{\pi}{6} \) <br />
+			<input id="pr8r4" type="radio" name="preg8"> \( \pi \) <br />
+			<input id="pr8r5" type="radio" name="preg8"> \( \frac{\pi^2}{6} \) <br />
+		</div>
 
-	<h2 class="preguntas">10. x<sup>x<sup>x<sup>.<sup>.<sup>.</sup></sup></sup></sup></sup>=2 ¿Cuál es la solución para x para que el resultado sea 2?</h2>
-	<input id="pr10r1" type="radio" name="preg10">a) x=&#8730;2<br />
-	<input id="pr10r2" type="radio" name="preg10">b) x=&#8730;3<br />
-	<input id="pr10r3" type="radio" name="preg10">c) x=&#8730;4<br />
-	<input id="pr10r4" type="radio" name="preg10">d) x=&#8730;1<br />
-	<input id="pr10r5" type="radio" name="preg10">e) x=&#8730;0<br />
+		<hr /> 
 
-	<hr /> 
+		<div class="cont-p9">
+			<h2 class="preguntas">9. ¿Cuál de estos valores se aproxima más a la constante de \( \mathbb{E}\)uler-\( \mathbb{M} \)ascheroni \( \gamma \) ?</h2>
+			<input id="pr9r1" type="radio" name="preg9"> \( 1,577215664901532860\) <br />
+			<input id="pr9r2" type="radio" name="preg9"> \(2,577215664901532860\) <br />
+			<input id="pr9r3" type="radio" name="preg9"> \(10,577215664901532860\) <br />
+			<input id="pr9r4" type="radio" name="preg9"> \(0,577215664901532860\) <br />
+			<input id="pr9r5" type="radio" name="preg9"> \(-1,577215664901532860\) <br />
+		</div>
 
-	<form>
-	<div id="btn-div">
-      	<button id="btn-1" type="button" name="button">Finalizar</button>
-    	</div>
-    	</form>
+		<hr /> 
 
-    <hr />
+		<div class="cont-p10">
+			<h2 class="preguntas">10. \( x^{x^x} \)<sup><sup><sup><sup>\( \cdot \)</sup></sup></sup></sup>
+				<sup><sup><sup><sup><sup>\( \cdot \)</sup></sup></sup></sup></sup>
+				<sup><sup><sup><sup><sup><sup>\( \cdot \)</sup></sup></sup></sup></sup></sup> \( = 2 \) ¿Cuál es la solución?</h2>
+			<input id="pr10r1" type="radio" name="preg10"> \( x = \sqrt{2} \) <br />
+			<input id="pr10r2" type="radio" name="preg10"> \( x = \sqrt{3} \) <br />
+			<input id="pr10r3" type="radio" name="preg10"> \( x = \sqrt{4} \) <br />
+			<input id="pr10r4" type="radio" name="preg10"> \( x = \sqrt{1} \) <br />
+			<input id="pr10r5" type="radio" name="preg10"> \( x = \sqrt{0} \) <br />
+		</div>
+		
+		<hr /> 
 
-    <h2>Acertadas: <span id="acierto"></span></h2>
-    <hr />
-    <h2>Erradas: <span id="fallo"></span></h2>
+		<div id="btn-div">
+			<form>
+				<button id="btn-1" type="button" name="button">Finalizar</button>
+			</form>
+		</div>
 
-    <hr />
+		<hr />
 
-    <h2><span id="total"></span></h2>
+		<div class="cont-r">
+			<h2 style="color: rgb(58, 182, 58)">Acertadas: <span id="acierto"></span></h2>
 
-	<footer id="ft">Hecho por Emiliano Espinosa 4º2º ---><a href="http://github.com/EmilianoEsp/TP-Test" target="_blank">Ir al repositorio</a>
+			<br />
+
+			<h2 style="color: rgb(209, 91, 91);">Erradas: <span id="fallo"></span></h2>
+
+			<br />
+			
+			<h2 style="color: rgb(200, 162, 111);"><span id="total"></span></h2>
+		</div>
+	</div>
+
+	<footer id="footer">Hecho por Emiliano Espinosa 4º2º --->
+		<a href="http://github.com/EmilianoEsp/TP-Test" target="_blank">Ir al repositorio</a>
 	</footer>
 
 	<script src="script.js" type="text/javascript"></script>

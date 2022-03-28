@@ -81,13 +81,13 @@ btnFinalizar.onclick = function() {
 		document.getElementById('total').innerHTML = "Felicitaciones, eres una persona muy inteligente";
 	}
 	else if (aciertos==6) {
-		document.getElementById('total').innerHTML = "Felicitaciones, se encuentra por encima del promedio";
+		document.getElementById('total').innerHTML = "Felicitaciones, te encuentras por encima del promedio";
 	}
 	else if (aciertos==5) {
-		document.getElementById('total').innerHTML = "Casi lo logras, sigue practicando. ";
+		document.getElementById('total').innerHTML = "Casi lo logras, sigue practicando ";
 	}
 	else {
-		document.getElementById('total').innerHTML = "Has fallado";
+		document.getElementById('total').innerHTML = "Has fallado...";
 	}
 	document.getElementById('acierto').innerHTML = aciertos;
 	document.getElementById('fallo').innerHTML = fallos;
